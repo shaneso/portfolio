@@ -3,15 +3,18 @@ import { DarkTheme, DefaultTheme, ThemeProvider } from "@react-navigation/native
 import { Stack, Tabs } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { Platform } from "react-native";
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+
+const Tab = createMaterialTopTabNavigator();
 
 export default function RootLayout() {
 
   return (
-    <Tabs
+    <Tab.Navigator
       screenOptions={{
         tabBarActiveTintColor: '#000000',
-        headerShown: false,
-        tabBarButton: HapticTab,
+        // headerShown: false,
+        // tabBarButton: HapticTab,
         tabBarStyle: Platform.select({
           ios: {
             position: 'absolute',
@@ -27,7 +30,7 @@ export default function RootLayout() {
         name="index"
         options={{ title: 'Home' }}
       />
-    </Tabs>
+    </Tab.Navigator>
     
     // <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
     //   <Stack>
