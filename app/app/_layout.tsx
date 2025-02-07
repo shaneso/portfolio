@@ -2,11 +2,9 @@ import { HapticTab } from "@/app-example/components/HapticTab";
 import { DarkTheme, DefaultTheme, ThemeProvider } from "@react-navigation/native";
 import { Stack, Tabs } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { useColorScheme, Platform } from "react-native";
+import { Platform } from "react-native";
 
 export default function RootLayout() {
-
-  const colorScheme = useColorScheme();
 
   return (
     <Tabs
@@ -22,18 +20,15 @@ export default function RootLayout() {
         }),
       }}>
       <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-        }}
+        name="about"
+        options={{ title: 'About' }}
       />
       <Tabs.Screen
-        name="about"
-        options={{
-          title: 'About',
-        }}
+        name="index"
+        options={{ title: 'Home' }}
       />
     </Tabs>
+    
     // <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
     //   <Stack>
     //     <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
