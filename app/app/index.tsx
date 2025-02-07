@@ -1,6 +1,5 @@
 import { NavigationProp, useNavigation } from "@react-navigation/native";
 import { Text, View, StyleSheet, Button } from "react-native";
-import { Link } from 'expo-router';
 import { RootStackParamList } from "./types";
 
 export default function Home() {

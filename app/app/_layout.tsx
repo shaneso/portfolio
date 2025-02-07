@@ -1,7 +1,7 @@
 import { NavigationProp, DarkTheme, DefaultTheme, ThemeProvider, useNavigation } from "@react-navigation/native";
-import { Stack, Tabs } from "expo-router";
+import { Tabs } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { useColorScheme, Platform, Button, TouchableOpacity } from "react-native";
+import { StyleSheet, useColorScheme, Platform, TouchableOpacity, Image } from "react-native";
 import { RootStackParamList } from "./types";
 
 export default function RootLayout() {
@@ -34,14 +34,13 @@ export default function RootLayout() {
           options={{
             title: 'Home',
             headerRight: () => (
-              <TouchableOpacity onPress={() => navigation.navigate('menu')}>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('menu')}>
                 <Image
+                  source={require('../assets/images/navbar-toggle.png')}
+                  style={styles.navbartoggle}
                 />
               </TouchableOpacity>
-              // <Button
-              //   title="Menu"
-              //   onPress={() => navigation.navigate('menu')}
-              // />
             ),
           }}
         />
@@ -50,3 +49,11 @@ export default function RootLayout() {
     </ThemeProvider>
   );
 }
+
+const styles = StyleSheet.create({
+  navbartoggle: {
+    width: 20,
+    resizeMode: 'contain',
+    marginRight: 20,
+  },
+});
