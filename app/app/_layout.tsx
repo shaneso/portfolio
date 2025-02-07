@@ -1,7 +1,7 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from "@react-navigation/native";
+import { DarkTheme, DefaultTheme, Link, ThemeProvider } from "@react-navigation/native";
 import { Stack, Tabs } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { useColorScheme, Platform } from "react-native";
+import { useColorScheme, Platform, Button } from "react-native";
 
 export default function RootLayout() {
 
@@ -21,15 +21,15 @@ export default function RootLayout() {
           }),
         }}>
         <Tabs.Screen
-          name="index"
+          name="menu"
           options={{
-            title: 'Home',
+            title: 'Menu',
           }}
         />
         <Tabs.Screen
-          name="about"
+          name="index"
           options={{
-            title: 'About',
+            title: 'Home',
           }}
         />
       </Tabs>
