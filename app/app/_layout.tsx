@@ -26,19 +26,28 @@ export default function RootLayout() {
         <Tabs.Screen
           name="menu"
           options={{
-            title: 'Menu',
+            title: 'Shane So',
+            headerRight: () => (
+              <TouchableOpacity
+                onPress={() => navigation.navigate('home')}>
+                <Image
+                  source={require('../assets/images/navbar-toggle-clicked.png')}
+                  style={styles.navbarToggle}
+                />
+              </TouchableOpacity>
+            ),
           }}
         />
         <Tabs.Screen
-          name="index"
+          name="home"
           options={{
-            title: 'Home',
+            title: 'Shane So',
             headerRight: () => (
               <TouchableOpacity
                 onPress={() => navigation.navigate('menu')}>
                 <Image
                   source={require('../assets/images/navbar-toggle.png')}
-                  style={styles.navbartoggle}
+                  style={styles.navbarToggle}
                 />
               </TouchableOpacity>
             ),
@@ -51,8 +60,8 @@ export default function RootLayout() {
 }
 
 const styles = StyleSheet.create({
-  navbartoggle: {
-    width: 20,
+  navbarToggle: {
+    width: 16,
     resizeMode: 'contain',
     marginRight: 20,
   },
