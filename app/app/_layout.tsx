@@ -1,42 +1,39 @@
-import { HapticTab } from "@/app-example/components/HapticTab";
 import { DarkTheme, DefaultTheme, ThemeProvider } from "@react-navigation/native";
 import { Stack, Tabs } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { Platform } from "react-native";
-import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
-
-const Tab = createMaterialTopTabNavigator();
+import { useColorScheme, Platform } from "react-native";
 
 export default function RootLayout() {
 
+  const colorScheme = useColorScheme();
+
   return (
-    <Tab.Navigator
-      screenOptions={{
-        tabBarActiveTintColor: '#000000',
-        // headerShown: false,
-        // tabBarButton: HapticTab,
-        tabBarStyle: Platform.select({
-          ios: {
-            position: 'absolute',
-          },
-          default: {},
-        }),
-      }}>
-      <Tabs.Screen
-        name="about"
-        options={{ title: 'About' }}
-      />
-      <Tabs.Screen
-        name="index"
-        options={{ title: 'Home' }}
-      />
-    </Tab.Navigator>
-    
-    // <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-    //   <Stack>
-    //     <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-    //   </Stack>
-    //   <StatusBar style="auto" />
-    // </ThemeProvider>
+    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+      <Tabs
+        screenOptions={{
+          tabBarActiveTintColor: '#000000',
+          headerShown: false,
+          tabBarStyle: Platform.select({
+            ios: {
+              position: 'absolute',
+            },
+            default: {},
+          }),
+        }}>
+        <Tabs.Screen
+          name="index"
+          options={{
+            title: 'Home',
+          }}
+        />
+        <Tabs.Screen
+          name="about"
+          options={{
+            title: 'About',
+          }}
+        />
+      </Tabs>
+      <StatusBar style="auto" />
+    </ThemeProvider>
   );
 }
