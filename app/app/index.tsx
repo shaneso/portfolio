@@ -1,10 +1,15 @@
+import { NavigationProp, useNavigation } from "@react-navigation/native";
 import { Text, View, StyleSheet, Button } from "react-native";
 import { Link } from 'expo-router';
+import { RootStackParamList } from "./types";
 
-export default function Index() {
+export default function Home() {
+
+  const navigation = useNavigation<NavigationProp<RootStackParamList>>();
+
   return (
     <View style={styles.container}>
-      <Link href={'/menu'} style={styles.about}>MENU</Link>
+      <Button title='Menu' onPress={() => navigation.navigate('menu')}></Button>
     </View>
   );
 }
