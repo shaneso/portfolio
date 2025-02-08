@@ -26,7 +26,7 @@ export default function RootLayout() {
         <Tabs.Screen
           name="menu"
           options={{
-            title: 'Shane So',
+            title: '',
             headerRight: () => (
               <TouchableOpacity
                 onPress={() => navigation.navigate('home')}>
@@ -41,7 +41,7 @@ export default function RootLayout() {
         <Tabs.Screen
           name="home"
           options={{
-            title: 'Shane So',
+            title: '',
             headerRight: () => (
               <TouchableOpacity
                 onPress={() => navigation.navigate('menu')}>
