@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shane So</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Shane So</description>
+    <title>Posts on Shane So</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Shane So</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Jan 2026 01:55:04 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analog Telemetry Stack</title>
       <link>http://localhost:1313/posts/telemetry_stack/</link>
@@ -28,13 +28,6 @@
       <pubDate>Sun, 04 Jan 2026 00:34:43 -0800</pubDate>
       <guid>http://localhost:1313/posts/nrc_internship/</guid>
       <description>&lt;p&gt;One of the first things I learned was that innovation (especially that of the technological and scientific kind) is a fast-paced, high-cost pursuit, and demands a very high degree of technical and mechanical mastery. The space in which innovation is bred is, I argue, one of the best places to grow as a technologist in the new era.&lt;/p&gt;&#xA;&lt;p&gt;Another piece of information I learned is that doing research and building a startup are quite similar ventures. After a decent amount of exposure to lab work and real-time creative processes, I realized that in scientific research it is not always feasible to collect data that verifies your hypothesis or experiment. It is a rarity to get things right the first time; neither will the second or third iteration prove much in most cases. Research, in this sense, is a mirror image of the &lt;em&gt;rapid prototyping&lt;/em&gt; effect exhibited by early-stage startups.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/_about/</link>
-      <pubDate>Sat, 03 Jan 2026 22:57:12 -0800</pubDate>
-      <guid>http://localhost:1313/_about/</guid>
-      <description>&lt;p&gt;Shane enjoys building intelligent machines—from processors, circuits, and actuators to the math, algorithms, and software that govern them. He is currently studying computer science and mathematics at &lt;a href=&#34;https://www.sfu.ca/&#34;&gt;Simon Fraser University&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Lately, he has been co-leading a new drone swarm research initiative at the &lt;a href=&#34;https://airob-group.github.io/&#34;&gt;Autonomous Intelligence and Robotics (AIRob) Lab&lt;/a&gt;. He is also developing trajectory optimization and thrust vector control software at &lt;a href=&#34;https://www.sfurocketry.com/&#34;&gt;Simon Fraser University Rocketry&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Previously, Shane led the invention of Canada&amp;rsquo;s first autonomous robotic control system at &lt;a href=&#34;https://nrc.canada.ca/en/&#34;&gt;National Research Council Canada&lt;/a&gt; for geochemical sensing and anomaly detection.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

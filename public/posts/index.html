@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en-us">
-  <head>
-	<meta name="generator" content="Hugo 0.154.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shane So</title>
+    <title>Posts | Shane So</title>
     <meta name="description" content="" />
 
     
@@ -218,84 +217,123 @@
     <div class="container">
       
 <style>
-  .page-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;  
-    max-width: 580px;  
-    padding: 0 20px;  
+  .posts-container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
   
-  .content-column {
-    width: 100%;
-    box-sizing: border-box;
-    min-width: auto;
-    max-width: 580px;  
-    font-size: 15px;
+  .posts-header {
+    margin-bottom: 40px;
   }
   
-  @media (max-width: 992px) {
-    .page-container {
-      flex-direction: column;
-    }
-    
-    .content-column {
-      width: 100%;
-      padding-right: 0;
-      min-width: auto;  
-      max-width: 580px;  
-      margin: 0 auto;  
-    }
+  .posts-title {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #4a4b4f;
+  }
+  
+  .posts-description {
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .post-list {
+    margin-bottom: 40px;
+  }
+  
+  .post-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .post-item:last-child {
+    border-bottom: none;
+  }
+  
+  .post-link {
+    display: block;
+    text-decoration: none;
+    color: #4a4b4f;
+  }
+  
+  .post-link:hover .post-item-title {
+    color: #8f6a60;
+  }
+  
+  .post-item-title {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    transition: color 0.2s;
+  }
+  
+  .post-item-date {
+    color: #9d9d9d;
+    font-style: italic;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .post-item-description {
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #8f6a60;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  
+  .back-link:hover {
+    color: #6b5046;
   }
 </style>
 
-<div class="page-container">
-  <div class="content-column">
-    <div class="section">
-      
-        <p>Shane enjoys building intelligent machines—from processors, circuits, and actuators to the math, algorithms, and software that govern them. He is currently studying computer science and mathematics at <a href="https://www.sfu.ca/">Simon Fraser University</a>.</p>
-<p>Lately, he has been co-leading a new drone swarm research initiative at the <a href="https://airob-group.github.io/">Autonomous Intelligence and Robotics (AIRob) Lab</a>. He is also developing trajectory optimization and thrust vector control software at <a href="https://www.sfurocketry.com/">Simon Fraser University Rocketry</a>.</p>
-<p>Previously, Shane led the invention of Canada&rsquo;s first autonomous robotic control system at <a href="https://nrc.canada.ca/en/">National Research Council Canada</a> for geochemical sensing and anomaly detection.</p>
-<p>Contact: shane_liam_so [at] sfu [dot] ca</p>
-<p><a href="https://www.linkedin.com/in/shaneso">LinkedIn</a> / <a href="https://github.com/shaneso">GitHub</a> / <a href="https://x.com/shanehso">X</a> / <a href="/shane_so_resume.pdf">CV</a></p>
-
-      
-    </div>    
+<div class="posts-container">
+  <div class="posts-header">
+    <h1 class="posts-title">Posts</h1>
     
-    <div class="section">
-      <div class="works-title">Writing</div>
-
-      
-      <div class="work-item">
-        <a href="/posts/telemetry_stack/" class="work-link">
-          <span class="work-title">Analog Telemetry Stack</span> 
-          <span class="year">(2026)</span>
-          <div class="description">A lightweight embedded telemetry stack for analog sensors.</div>
-        </a>
-      </div>
-      
-      <div class="work-item">
-        <a href="/posts/fs_uav_network/" class="work-link">
-          <span class="work-title">Distributed FanciSwarm UAV Network</span> 
-          <span class="year">(2026)</span>
-          <div class="description">Tutorial on setting up ESP8266 networking modules for FanciSwarm UAVs.</div>
-        </a>
-      </div>
-      
-      <div class="work-item">
-        <a href="/posts/nrc_internship/" class="work-link">
-          <span class="work-title">National Research Council Canada</span> 
-          <span class="year">(2026)</span>
-          <div class="description">Lessons I learned during my first engineering internship.</div>
-        </a>
-      </div>
-      
-    </div>
-
-    <div class="contact">
-         
-    </div>
   </div>
+  
+  <div class="post-list">
+    
+    <div class="post-item">
+      <a href="http://localhost:1313/posts/telemetry_stack/" class="post-link">
+        <h2 class="post-item-title">Analog Telemetry Stack</h2>
+        <div class="post-item-date">January 4, 2026</div>
+        <div class="post-item-description">A lightweight embedded telemetry stack for analog sensors.</div>
+      </a>
+    </div>
+    
+    <div class="post-item">
+      <a href="http://localhost:1313/posts/fs_uav_network/" class="post-link">
+        <h2 class="post-item-title">Distributed FanciSwarm UAV Network</h2>
+        <div class="post-item-date">January 4, 2026</div>
+        <div class="post-item-description">Tutorial on setting up ESP8266 networking modules for FanciSwarm UAVs.</div>
+      </a>
+    </div>
+    
+    <div class="post-item">
+      <a href="http://localhost:1313/posts/nrc_internship/" class="post-link">
+        <h2 class="post-item-title">National Research Council Canada</h2>
+        <div class="post-item-date">January 4, 2026</div>
+        <div class="post-item-description">Lessons I learned during my first engineering internship.</div>
+      </a>
+    </div>
+    
+  </div>
+  
+  <a href="/" class="back-link">← Back to home</a>
 </div>
 
     </div>
