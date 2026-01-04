@@ -1,0 +1,7 @@
+baseURL = 'https://www.shaneso.dev/'
+languageCode = 'en-us'
+title = 'Shane So'
+theme = 'ritzy'
+
+[params]
+  author = "Shane So"
