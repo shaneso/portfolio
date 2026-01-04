@@ -10,4 +10,6 @@ Lately, he has been co-leading a new drone swarm research initiative at the [Aut
 
 Previously, Shane led the invention of Canada's first autonomous robotic control system at [National Research Council Canada](https://nrc.canada.ca/en/) for geochemical sensing and anomaly detection.
 
-Connect with him on [LinkedIn](https://www.linkedin.com/in/shaneso), [GitHub](https://github.com/shaneso), [X](https://x.com/shanehso), or contact him by [email](mailto:shane_liam_so@sfu.ca). To learn more about Shane's work, please see his [resume](/shane_so_resume.pdf).
+Contact: shane_liam_so [at] sfu [dot] ca
+
+[LinkedIn](https://www.linkedin.com/in/shaneso) / [GitHub](https://github.com/shaneso) / [X](https://x.com/shanehso) / [CV](/shane_so_resume.pdf)
