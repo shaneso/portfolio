@@ -6,8 +6,15 @@
     <description>Recent content on Shane So</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Jan 2026 01:55:04 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 31 Jan 2026 22:35:11 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ROS Noetic &#43; Docker Environment Setup</title>
+      <link>http://localhost:1313/posts/ros_noetic_docker/</link>
+      <pubDate>Sat, 31 Jan 2026 22:35:11 -0800</pubDate>
+      <guid>http://localhost:1313/posts/ros_noetic_docker/</guid>
+      <description>&lt;h3 id=&#34;instructions&#34;&gt;Instructions&lt;/h3&gt;&#xA;&lt;p&gt;Instead of installing all dependencies, can use Docker premade images from the Docker Hub:&#xA;&lt;code&gt;docker pull osrf/ros:noetic-desktop-full&lt;/code&gt;&#xA;This command installs the ROS environment you need to run your packages with the installed containers that contain all dependencies.&#xA;You need to &lt;em&gt;mount&lt;/em&gt; the file directory of your project onto the virtual environment build from Docker. The command may look something like:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker run -it -v --name &amp;lt;container_name&amp;gt; --network host $(pwd):/&amp;lt;project_directory_name&amp;gt; osrf/ros:noetic-desktop-full bash&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or the command may first start off as:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Analog Telemetry Stack</title>
       <link>http://localhost:1313/posts/telemetry_stack/</link>
@@ -34,7 +41,7 @@
       <link>http://localhost:1313/_about/</link>
       <pubDate>Sat, 03 Jan 2026 22:57:12 -0800</pubDate>
       <guid>http://localhost:1313/_about/</guid>
-      <description>&lt;p&gt;Shane enjoys building intelligent machines—from processors, circuits, and actuators to the math, algorithms, and software that govern them. He is currently studying computer science and mathematics at &lt;a href=&#34;https://www.sfu.ca/&#34;&gt;Simon Fraser University&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Lately, he has been co-leading a new drone swarm research initiative at the &lt;a href=&#34;https://airob-group.github.io/&#34;&gt;Autonomous Intelligence and Robotics (AIRob) Lab&lt;/a&gt;. He is also developing trajectory optimization and thrust vector control software at &lt;a href=&#34;https://www.sfurocketry.com/&#34;&gt;Simon Fraser University Rocketry&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Previously, Shane led the invention of Canada&amp;rsquo;s first autonomous robotic control system at &lt;a href=&#34;https://nrc.canada.ca/en/&#34;&gt;National Research Council Canada&lt;/a&gt; for geochemical sensing and anomaly detection.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Shane enjoys building intelligent machines—from processors, circuits, and actuators to the math, algorithms, and software that govern them. He is currently studying computer science and mathematics at &lt;a href=&#34;https://www.sfu.ca/&#34;&gt;Simon Fraser University&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Lately, he has been co-leading a new UAV fleet research initiative at the &lt;a href=&#34;https://airob-group.github.io/&#34;&gt;Autonomous Intelligence and Robotics (AIRob) Lab&lt;/a&gt;. He is also developing trajectory optimization and thrust vector control software at &lt;a href=&#34;https://www.sfurocketry.com/&#34;&gt;Simon Fraser University Rocketry&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Previously, Shane worked with a team at &lt;a href=&#34;https://nrc.canada.ca/en&#34;&gt;National Research Council Canada&lt;/a&gt; to build Canada&amp;rsquo;s first autonomous robotic control system for geochemical sensing and anomaly detection.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

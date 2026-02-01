@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Shane So</title>
+    <title>ROS Noetic &#43; Docker Environment Setup | Shane So</title>
     <meta name="description" content="" />
 
     
@@ -304,16 +304,74 @@
 
 <div class="post-container">
   <div class="post-header">
-    <h1 class="post-title">About</h1>
-    <div class="post-date">January 3, 2026</div>
+    <h1 class="post-title">ROS Noetic &#43; Docker Environment Setup</h1>
+    <div class="post-date">January 31, 2026</div>
   </div>
   
   <div class="post-content">
-    <p>Shane enjoys building intelligent machines—from processors, circuits, and actuators to the math, algorithms, and software that govern them. He is currently studying computer science and mathematics at <a href="https://www.sfu.ca/">Simon Fraser University</a>.</p>
-<p>Lately, he has been co-leading a new UAV fleet research initiative at the <a href="https://airob-group.github.io/">Autonomous Intelligence and Robotics (AIRob) Lab</a>. He is also developing trajectory optimization and thrust vector control software at <a href="https://www.sfurocketry.com/">Simon Fraser University Rocketry</a>.</p>
-<p>Previously, Shane worked with a team at <a href="https://nrc.canada.ca/en">National Research Council Canada</a> to build Canada&rsquo;s first autonomous robotic control system for geochemical sensing and anomaly detection.</p>
-<p>Contact: shane_liam_so [at] sfu [dot] ca</p>
-<p><a href="https://www.linkedin.com/in/shaneso">LinkedIn</a> / <a href="https://github.com/shaneso">GitHub</a> / <a href="https://x.com/shanehso">X</a> / <a href="/shane_so_resume.pdf">CV</a></p>
+    <h3 id="instructions">Instructions</h3>
+<p>Instead of installing all dependencies, can use Docker premade images from the Docker Hub:
+<code>docker pull osrf/ros:noetic-desktop-full</code>
+This command installs the ROS environment you need to run your packages with the installed containers that contain all dependencies.
+You need to <em>mount</em> the file directory of your project onto the virtual environment build from Docker. The command may look something like:</p>
+<pre tabindex="0"><code>docker run -it -v --name &lt;container_name&gt; --network host $(pwd):/&lt;project_directory_name&gt; osrf/ros:noetic-desktop-full bash
+</code></pre><p>or the command may first start off as:</p>
+<pre tabindex="0"><code>docker run -it -v $(pwd):/&lt;project_directory_name&gt; osrf/ros:noetic-desktop-full bash
+</code></pre><p>Next, download all the dependencies. For example, execute the commands:
+<code>apt install ros-noetic-serial</code> and <code>apt install libeigen3-dev</code>
+If it doesn&rsquo;t work, try updating the library/package manager using <code>apt update</code> then try installing the dependencies again.
+Run <code>apt install git</code> to install <em>git</em> into your environment.
+Move into your <code>src</code> directory, then verify if you have all the source code repositories contained in it. Install as needed. At this point, you would usually just have your <code>src</code> folder within your main project folder in root. To produce the <code>build</code> and <code>devel</code> folder alongside your <code>src</code>, you can run <code>catkin_make</code> to setup your compiled ROS builds for your project.
+Move into your <code>devel</code> folder, and run <code>. setup.bash</code> or <code>source setup.bash</code> to setup your ROS environment variables, such as the ROS distribution to be used (e.g. noetic, humble, etc), ROS package paths, and so on.
+Finally, launch your project software in the compiled ROS environment using the command <code>roslaunch</code> or <code>roslaunch &lt;source_code_directory_name&gt; &lt;source_code_directory_name&gt;.launch</code></p>
+<p><strong>IF launch process cannot run the interface DO</strong>
+Setup Xserver in your Docker container with <code>xhost +local:docker</code>
+After, run the ROS environment in your Docker container using:</p>
+<pre tabindex="0"><code>docker run -it --name &lt;project_container_name&gt; --env=&#34;DISPLAY=$DISPLAY&#34; --env=&#34;QT_X11_NO_MITSHM=1&#34; --volume=&#34;/tmp/.X11-unix:/tmp/.X11-unix:rw&#34; --net=host -v $(pwd):/&lt;project_directory&gt; osrf/ros:noetic-desktop-full bash
+</code></pre><p>Note that the <code>--net=host</code> is an optional flag, but is important when working with local network configs later on.
+Run <code>apt update</code> then run <code>apt install tmux</code> to install the terminal multiplexer for the next steps.
+Use the terminal multiplexer to setup dual shells with <code>tmux</code>
+On the first terminal, execute <code>roscore</code>
+On the second terminal, execute <code>rviz</code> to launch the RViz interface. Now you should be able to use RViz.</p>
+<h3 id="prerequisites-packages-to-install-in-ros-docker-cli">Prerequisites (packages) to install in ROS-Docker CLI</h3>
+<p>Install the following packages using <code>apt install</code> after running <code>sudo apt update</code>:</p>
+<ul>
+<li><code>ros-noetic-serial</code></li>
+<li><code>libeigen3-dev</code></li>
+<li><code>x11-apps</code></li>
+<li><code>tmux</code></li>
+<li><code>git</code></li>
+</ul>
+<p><strong>ELSE DO</strong>
+Now, exit the Docker terminal and return to the Ubuntu interface. You can do this using <code>exit</code> and it should close. You can purge <em>Postfix</em> with these commands (verify that you don&rsquo;t need it first before running this process):</p>
+<ol>
+<li>sudo apt-get &ndash;purge remove postfix -y</li>
+<li>sudo apt-get autoremove -y</li>
+<li>sudo apt-get autoclean</li>
+<li>sudo apt-get -f install</li>
+</ol>
+<p>You should now be able to install the X11 apps needed to run the GUI, specifically for your <em>RViz</em> interface. Run the following process to install the GUI packages:
+<code>sudo apt install x11-apps</code>
+Test to see if one of the app widget GUIs work (like the clock) using <code>xclock</code>
+Run <code>xhost +local:docker</code> to modify access for local connections.
+Go back into the Docker terminal (ROS environment) and <code>cd</code> into <code>devel</code> then run the command <code>. setup.bash</code> to source the variables. Launch the project again.</p>
+<h3 id="starting-a-docker-container">Starting a Docker container</h3>
+<p>Run the command <code>docker start -ai &lt;container_id&gt;</code> where the <code>container_id</code> can be the Docker container byte string (ID) or the container name. If you use the ID string, you can just use the first few alphanumeric characters/digits as the identifier to make things faster (instead of writing out the entire byte string ID). To list out all generated Docker containers in your system environment, run the command <code>docker ps -a</code>.</p>
+<h3 id="information">Information</h3>
+<p><code>docker run</code> is creating a container from an image.
+<code>docker start</code> runs the current container that already exists.
+Insert drive on M2 slot in motherboard to flash a Ubuntu OS on your laptop.
+In the workspace folder (once you&rsquo;re in the ROS Docker terminal) you can <code>git clone</code> other relevant source codes and contain it all in a <code>src</code> folder.
+Next you run <code>catkin_make</code> to build the ROS environment and compile the source code. In your main project directory root, you will see a <code>build</code> folder, a <code>devel</code> folder, and a <code>src</code> folder (which contains all the folders containing relevant source code and software).
+You may want to setup the environment variables using the command:
+<code>. setup.bash</code> which uses the <code>.</code> alias of <code>source</code> to execute the <code>.bash</code> script, preparing the environment for ROS.
+Then, launch the ROS environment and boot your project through it using:
+<code>roslaunch &lt;project_name&gt; &lt;project_name&gt;.launch</code>
+Some networking modules have two modes:</p>
+<ol>
+<li>Configuration mode - AT commands have specific baud rate</li>
+<li>Working mode - baud rate may be different for software operation</li>
+</ol>
 
   </div>
   
