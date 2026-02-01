@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en-us">
-  <head>
-	<meta name="generator" content="Hugo 0.154.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shane So</title>
+    <title>Debugging Rviz Launch Issues | Shane So</title>
     <meta name="description" content="" />
 
     
@@ -218,100 +217,119 @@
     <div class="container">
       
 <style>
-  .page-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;  
+  .post-container {
     max-width: 580px;  
-    padding: 0 20px;  
+    margin: 0 auto;
+    padding: 0 20px;
   }
   
-  .content-column {
-    width: 100%;
-    box-sizing: border-box;
-    min-width: auto;
-    max-width: 580px;  
-    font-size: 15px;
+  .post-header {
+    margin-bottom: 40px;
   }
   
-  @media (max-width: 992px) {
-    .page-container {
-      flex-direction: column;
-    }
-    
-    .content-column {
-      width: 100%;
-      padding-right: 0;
-      min-width: auto;  
-      max-width: 580px;  
-      margin: 0 auto;  
-    }
+  .post-title {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #4a4b4f;
+  }
+  
+  .post-date {
+    color: #9d9d9d;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .post-description {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 17px;
+  }
+  
+  .post-content {
+    line-height: 1.8;
+  }
+  
+  .post-content h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 30px 0 20px 0;
+    color: #4a4b4f;
+  }
+  
+  .post-content p {
+    margin-bottom: 20px;
+  }
+  
+  .post-content img {
+    display: block;
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 4px;
+  }
+  
+   
+  .post-content img + em {
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .post-content em {
+    color: #666;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #8f6a60;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  
+  .back-link:hover {
+    color: #6b5046;
   }
 </style>
 
-<div class="page-container">
-  <div class="content-column">
-    <div class="section">
-      
-        <p>Shane enjoys building intelligent machines—from processors, circuits, and actuators to the math, algorithms, and software that govern them. He is currently studying computer science and mathematics at <a href="https://www.sfu.ca/">Simon Fraser University</a>.</p>
-<p>Lately, he has been co-leading a new UAV fleet research initiative at the <a href="https://airob-group.github.io/">Autonomous Intelligence and Robotics (AIRob) Lab</a>. He is also developing trajectory optimization and thrust vector control software at <a href="https://www.sfurocketry.com/">Simon Fraser University Rocketry</a>.</p>
-<p>Previously, Shane worked with a team at <a href="https://nrc.canada.ca/en">National Research Council Canada</a> to build Canada&rsquo;s first autonomous robotic control system for geochemical sensing and anomaly detection.</p>
-<p>Contact: shane_liam_so [at] sfu [dot] ca</p>
-<p><a href="https://www.linkedin.com/in/shaneso">LinkedIn</a> / <a href="https://github.com/shaneso">GitHub</a> / <a href="https://x.com/shanehso">X</a> / <a href="/shane_so_resume.pdf">CV</a></p>
-
-      
-    </div>    
-    
-    <div class="section">
-      <div class="works-title">Writing</div>
-
-      
-      <div class="work-item">
-        <a href="/posts/rviz_interface/" class="work-link">
-          <span class="work-title">Debugging Rviz Launch Issues</span> 
-          <span class="year">(2026)</span>
-          <div class="description">Fixes to common Rviz interface launch conflicts in containerized ROS environments in Linux.</div>
-        </a>
-      </div>
-      
-      <div class="work-item">
-        <a href="/posts/ros_noetic_docker/" class="work-link">
-          <span class="work-title">ROS Noetic &#43; Docker Environment Setup</span> 
-          <span class="year">(2026)</span>
-          <div class="description">Building a ROS Noetic Docker container environment for robotics projects.</div>
-        </a>
-      </div>
-      
-      <div class="work-item">
-        <a href="/posts/telemetry_stack/" class="work-link">
-          <span class="work-title">Analog Telemetry Stack</span> 
-          <span class="year">(2026)</span>
-          <div class="description">A lightweight embedded telemetry stack for analog sensors.</div>
-        </a>
-      </div>
-      
-      <div class="work-item">
-        <a href="/posts/fs_uav_network/" class="work-link">
-          <span class="work-title">Distributed FanciSwarm UAV Network</span> 
-          <span class="year">(2026)</span>
-          <div class="description">Tutorial on setting up ESP8266 networking modules for FanciSwarm UAVs.</div>
-        </a>
-      </div>
-      
-      <div class="work-item">
-        <a href="/posts/nrc_internship/" class="work-link">
-          <span class="work-title">National Research Council Canada</span> 
-          <span class="year">(2026)</span>
-          <div class="description">Lessons I learned during my first engineering internship.</div>
-        </a>
-      </div>
-      
-    </div>
-
-    <div class="contact">
-         
-    </div>
+<div class="post-container">
+  <div class="post-header">
+    <h1 class="post-title">Debugging Rviz Launch Issues</h1>
+    <div class="post-date">January 31, 2026</div>
   </div>
+  
+  <div class="post-content">
+    <h3 id="cmake-cache-load-conflict-error">CMake Cache Load Conflict Error</h3>
+<p>Run <code>rm -rf build devel install</code> to wipe the <code>build/</code> and <code>devel/</code> cache. After cleaning the cache, run <code>catkin_make</code> to rebuild the directories alongside the <code>src</code> folder.</p>
+<h3 id="rviz-launch-access-authorization-and-x11-forwarding">RViz Launch Access Authorization and X11 Forwarding</h3>
+<p>When running the process <code>roslaunch fcu_core fcu_core.launch</code> you may encounter an error log that looks like <code>[rviz-9] process has died [pid 2302, exit code -6, cmd nice /opt/ros/noetic/lib/rviz/rviz -d /uav_project</code>. This means that RViz needs a local runtime launched on the host (since you will likely be running the ROS Noetic environment inside a Docker container). To resolve this, run the command <code>xhost +local:root</code> outside of your container (in your host machine), then re-enter into your ROS container environment and run the launch process again.</p>
+<h3 id="rviz-launch-error---mesa-and-opengl">RViz Launch Error - Mesa and OpenGL</h3>
+<p>Verify that your ROS nodes can be accessed and that ROS master is connected. You can test this by running <code>rosnode list</code>. If it returns <code>ERROR: Unable to communicate with master!</code>, run the following commands.</p>
+<pre tabindex="0"><code>unset ROS_HOSTNAME
+unset ROS_IP
+export ROS_MASTER_URI=http://localhost:11311
+</code></pre><p>These commands configure your ROS session to run in an isolated local machine environment, so that any conflicts or incompatible environment variables do not persist. Next, we configure the subsystem and kernel processes such that Mesa is not expecting a different rendering manager or encounters userspace access restrictions. We achieve this with the following:</p>
+<pre tabindex="0"><code>export LIBGL_ALWAYS_SOFTWARE=1
+export MESA_LOADER_DRIVER_OVERRIDE=llvmpipe
+export GALLIUM_DRIVER=llvmpipe
+export MESA_GL_VERSION_OVERRIDE=3.3
+export MESA_NO_ERROR=1
+export QT_XCB_GL_INTEGRATION=none
+</code></pre><p>Now try running <code>roscore</code> and <code>roslaunch fcu_core fcu_core.launch</code> in <code>tmux</code> again and verify that the <code>rviz</code> interface is running properly.</p>
+
+  </div>
+  
+  <a href="/" class="back-link">← Back to home</a>
 </div>
 
     </div>

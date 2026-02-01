@@ -6,8 +6,15 @@
     <description>Recent content on Shane So</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Jan 2026 22:35:11 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 31 Jan 2026 23:33:45 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debugging Rviz Launch Issues</title>
+      <link>http://localhost:1313/posts/rviz_interface/</link>
+      <pubDate>Sat, 31 Jan 2026 23:33:45 -0800</pubDate>
+      <guid>http://localhost:1313/posts/rviz_interface/</guid>
+      <description>&lt;h3 id=&#34;cmake-cache-load-conflict-error&#34;&gt;CMake Cache Load Conflict Error&lt;/h3&gt;&#xA;&lt;p&gt;Run &lt;code&gt;rm -rf build devel install&lt;/code&gt; to wipe the &lt;code&gt;build/&lt;/code&gt; and &lt;code&gt;devel/&lt;/code&gt; cache. After cleaning the cache, run &lt;code&gt;catkin_make&lt;/code&gt; to rebuild the directories alongside the &lt;code&gt;src&lt;/code&gt; folder.&lt;/p&gt;&#xA;&lt;h3 id=&#34;rviz-launch-access-authorization-and-x11-forwarding&#34;&gt;RViz Launch Access Authorization and X11 Forwarding&lt;/h3&gt;&#xA;&lt;p&gt;When running the process &lt;code&gt;roslaunch fcu_core fcu_core.launch&lt;/code&gt; you may encounter an error log that looks like &lt;code&gt;[rviz-9] process has died [pid 2302, exit code -6, cmd nice /opt/ros/noetic/lib/rviz/rviz -d /uav_project&lt;/code&gt;. This means that RViz needs a local runtime launched on the host (since you will likely be running the ROS Noetic environment inside a Docker container). To resolve this, run the command &lt;code&gt;xhost +local:root&lt;/code&gt; outside of your container (in your host machine), then re-enter into your ROS container environment and run the launch process again.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>ROS Noetic &#43; Docker Environment Setup</title>
       <link>http://localhost:1313/posts/ros_noetic_docker/</link>
