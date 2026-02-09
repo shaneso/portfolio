@@ -14,4 +14,4 @@ Previously, I worked with a team at [National Research Council Canada](https://n
 
 Contact: shane_liam_so [at] sfu [dot] ca
 
-[LinkedIn](https://www.linkedin.com/in/shaneso) / [GitHub](https://github.com/shaneso) / [X](https://x.com/shanehso) / [CV](/shane_so_resume.pdf)
+[LinkedIn](https://www.linkedin.com/in/shaneso) / [GitHub](https://github.com/shaneso) / [X](https://x.com/shanehso) / [CV](/Shane_So_CV.pdf)
