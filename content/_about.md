@@ -8,7 +8,7 @@ title = 'About'
 
 I enjoy building intelligent machines—from processors, circuits, and actuators to the math, algorithms, and software that govern them. I'm currently studying computer science and mathematics at [Simon Fraser University](https://www.sfu.ca/).
 
-Currently, I'm co-leading a new UAV fleet research initiative at the [Autonomous Intelligence and Robotics (AIRob) Lab](https://airob-group.github.io/). I'm also developing trajectory optimization and thrust vector control software at [Simon Fraser University Rocketry](https://www.sfurocketry.com/).
+Currently, I'm co-leading a new UAV fleet research initiative at the [SFU Autonomous Intelligence and Robotics Lab](https://airob-group.github.io/). I'm also developing trajectory optimization and thrust vector control software at [Simon Fraser University Rocketry](https://www.sfurocketry.com/).
 
 Previously, I worked with a team at [National Research Council Canada](https://nrc.canada.ca/en) to build Canada's first autonomous robotic control system for geochemical sensing and anomaly detection.
 
