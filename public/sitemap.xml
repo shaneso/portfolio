@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/git_lfs/</loc>
-    <lastmod>2026-01-31T23:40:55-08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-01-31T23:40:55-08:00</lastmod>
+    <lastmod>2026-02-13T13:03:57-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-13T13:03:57-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/sdlc/</loc>
+    <lastmod>2026-02-13T13:03:57-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/git_lfs/</loc>
     <lastmod>2026-01-31T23:40:55-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/rviz_interface/</loc>

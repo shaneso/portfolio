@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en-us">
-  <head>
-	<meta name="generator" content="Hugo 0.155.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shane So</title>
+    <title>Software Development Life Cycle (SDLC) | Shane So</title>
     <meta name="description" content="" />
 
     
@@ -218,117 +217,154 @@
     <div class="container">
       
 <style>
-  .page-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;  
+  .post-container {
     max-width: 580px;  
-    padding: 0 20px;  
+    margin: 0 auto;
+    padding: 0 20px;
   }
   
-  .content-column {
-    width: 100%;
-    box-sizing: border-box;
-    min-width: auto;
-    max-width: 580px;  
-    font-size: 15px;
+  .post-header {
+    margin-bottom: 40px;
   }
   
-  @media (max-width: 992px) {
-    .page-container {
-      flex-direction: column;
-    }
-    
-    .content-column {
-      width: 100%;
-      padding-right: 0;
-      min-width: auto;  
-      max-width: 580px;  
-      margin: 0 auto;  
-    }
+  .post-title {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #4a4b4f;
+  }
+  
+  .post-date {
+    color: #9d9d9d;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .post-description {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 17px;
+  }
+  
+  .post-content {
+    line-height: 1.8;
+  }
+  
+  .post-content h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 30px 0 20px 0;
+    color: #4a4b4f;
+  }
+  
+  .post-content p {
+    margin-bottom: 20px;
+  }
+  
+  .post-content img {
+    display: block;
+    width: 80%;
+    max-width: 80%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 4px;
+  }
+  
+   
+  .post-content img + em {
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .post-content em {
+    color: #666;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #8f6a60;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  
+  .back-link:hover {
+    color: #6b5046;
   }
 </style>
 
-<div class="page-container">
-  <div class="content-column">
-    <div class="section">
-      
-        <h1 id="hi-im-shane">Hi, I&rsquo;m Shane</h1>
-<p>I enjoy building intelligent machines—from processors, circuits, and actuators to the math, algorithms, and software that govern them. I&rsquo;m currently studying computer science and mathematics at <a href="https://www.sfu.ca/">Simon Fraser University</a>.</p>
-<p>Currently, I&rsquo;m co-leading a new UAV fleet research initiative at the <a href="https://airob-group.github.io/">SFU Autonomous Intelligence and Robotics Lab</a>. I&rsquo;m also developing trajectory optimization and thrust vector control software at <a href="https://www.sfurocketry.com/">Simon Fraser University Rocketry</a>.</p>
-<p>Previously, I worked with a team at <a href="https://nrc.canada.ca/en">National Research Council Canada</a> to build Canada&rsquo;s first autonomous robotic control system for geochemical sensing and anomaly detection.</p>
-<p>Contact: shane_liam_so [at] sfu [dot] ca</p>
-<p><a href="https://www.linkedin.com/in/shaneso">LinkedIn</a> / <a href="https://github.com/shaneso">GitHub</a> / <a href="https://x.com/shanehso">X</a> / <a href="/Shane_So_CV.pdf">CV</a></p>
-
-      
-    </div>    
-    
-    <div class="section">
-      <div class="works-title">Writing</div>
-
-      
-      <div class="work-item">
-        <a href="/posts/sdlc/" class="work-link">
-          <span class="work-title">Software Development Life Cycle (SDLC)</span> 
-          <span class="year">(2026)</span>
-          <div class="description">Add a brief description here.</div>
-        </a>
-      </div>
-      
-      <div class="work-item">
-        <a href="/posts/git_lfs/" class="work-link">
-          <span class="work-title">Git Large File Storage (LFS)</span> 
-          <span class="year">(2026)</span>
-          <div class="description">A quick and easy guide to using Git LFS.</div>
-        </a>
-      </div>
-      
-      <div class="work-item">
-        <a href="/posts/rviz_interface/" class="work-link">
-          <span class="work-title">Debugging Rviz Launch Issues</span> 
-          <span class="year">(2026)</span>
-          <div class="description">Fixes to common Rviz interface launch conflicts in containerized ROS environments in Linux.</div>
-        </a>
-      </div>
-      
-      <div class="work-item">
-        <a href="/posts/ros_noetic_docker/" class="work-link">
-          <span class="work-title">ROS Noetic &#43; Docker Environment Setup</span> 
-          <span class="year">(2026)</span>
-          <div class="description">Building a ROS Noetic Docker container environment for robotics projects.</div>
-        </a>
-      </div>
-      
-      <div class="work-item">
-        <a href="/posts/telemetry_stack/" class="work-link">
-          <span class="work-title">Analog Telemetry Stack</span> 
-          <span class="year">(2026)</span>
-          <div class="description">A lightweight embedded telemetry stack for analog sensors.</div>
-        </a>
-      </div>
-      
-      <div class="work-item">
-        <a href="/posts/fs_uav_network/" class="work-link">
-          <span class="work-title">Distributed FanciSwarm UAV Network</span> 
-          <span class="year">(2026)</span>
-          <div class="description">Tutorial on setting up ESP8266 networking modules for FanciSwarm UAVs.</div>
-        </a>
-      </div>
-      
-      <div class="work-item">
-        <a href="/posts/nrc_internship/" class="work-link">
-          <span class="work-title">National Research Council Canada</span> 
-          <span class="year">(2026)</span>
-          <div class="description">Lessons I learned during my first engineering internship.</div>
-        </a>
-      </div>
-      
-    </div>
-
-    <div class="contact">
-         
-    </div>
+<div class="post-container">
+  <div class="post-header">
+    <h1 class="post-title">Software Development Life Cycle (SDLC)</h1>
+    <div class="post-date">February 13, 2026</div>
   </div>
+  
+  <div class="post-content">
+    <h3 id="methodologies">Methodologies</h3>
+<ul>
+<li>Scrum
+<ul>
+<li>Backlog development (refinement)</li>
+<li>Spring planning</li>
+</ul>
+</li>
+<li>Agile</li>
+<li>Kanban</li>
+<li>Waterfall</li>
+<li>Extreme programming (XP)</li>
+<li>Lean</li>
+<li>DevOps</li>
+<li>Rapid application development (RAD)</li>
+<li>Test-driven development (TDD)</li>
+</ul>
+<h3 id="production-process">Production Process</h3>
+<ol>
+<li>Technical design doc / RFC + architecture (how components interact)</li>
+<li>Design review + senior engineer feedback loop</li>
+<li>Documentation of subsystems to be built by individual dev teams</li>
+<li>Backlog dev + sprint planning + working with PMs + TPMs to discretize tasks</li>
+<li>Software dev + completing task tickets (JIRA, Linear, Asana)</li>
+<li>Unit + integration tests, static + dynamic analysis</li>
+<li>Code submission review (CR) + pull/merge requests + adherence to style guides + automated checks (CI)</li>
+<li>Test in staging + testing edge cases + performance + security testing (simulate high traffic and security standards)</li>
+<li>Push to production + CI/CD pipeline</li>
+<li>Canary release + blue-green deployment + feature flags (switch to enable/disable a feature)</li>
+<li>Monitoring (error rates, latency, real-time logs) + support tickets + user feedback + incident response (pre-defined rollback plan)</li>
+</ol>
+<h3 id="philosophies">Philosophies</h3>
+<ul>
+<li>Scoping + preventing &ldquo;scope creep&rdquo;</li>
+<li>Consider data models (database structs + API specs) + trade-offs</li>
+<li>Always start with a solid design doc + architecture</li>
+<li>Built modular from design doc + architecture in chunks</li>
+<li>Always write tests first</li>
+<li>Load balancing + session affinity</li>
+<li>Canary is often released to a small subset of users (e.g. 1%) + A&raquo;B (e.g. 90-10, 80-20) since it is meant to validate production functionality</li>
+</ul>
+<h3 id="production-deployment-methodologies">Production Deployment Methodologies</h3>
+<ul>
+<li>Canary</li>
+<li>Blue-Green</li>
+<li>Rolling</li>
+<li>Shadow</li>
+<li>A/B Testing</li>
+<li>Big Bang</li>
+<li>Feature flags</li>
+<li>Dark launching</li>
+</ul>
+
+  </div>
+  
+  <a href="/" class="back-link">← Back to home</a>
 </div>
 
     </div>
