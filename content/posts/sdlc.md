@@ -2,7 +2,7 @@
 title: "Software Development Life Cycle (SDLC)"
 date: 2026-02-13T13:03:57-08:00
 draft: false
-description: "Add a brief description here."
+description: "Managing software from technical design to production."
 ---
 
 ### Methodologies

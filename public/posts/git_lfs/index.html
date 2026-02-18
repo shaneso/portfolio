@@ -315,39 +315,39 @@
 <ol>
 <li>Verify Git LFS is installed and initialized. Make sure git hooks are updated.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git lfs install
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git lfs install
 </span></span></code></pre></div><ol>
 <li>Track the file types you want associated with Git LFS. This will update the <code>.gitattributes</code> file.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git lfs track <span style="color:#e6db74">&#34;*.&lt;file extension type&gt;&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git lfs track <span style="color:#e6db74">&#34;*.&lt;file extension type&gt;&#34;</span>
 </span></span></code></pre></div><ul>
 <li>It is also good to commit the <code>.gitattributes</code> file to update the changes.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .gitattributes
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .gitattributes
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;&lt;insert commit message&gt;&#34;</span>
 </span></span></code></pre></div><ol>
 <li>You may need to rewrite the history to remove the original non-LFS commits of large files.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git rm --cached <span style="color:#e6db74">&#34;&lt;path to large file&gt;&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git rm --cached <span style="color:#e6db74">&#34;&lt;path to large file&gt;&#34;</span>
 </span></span><span style="display:flex;"><span>git add .
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;&lt;insert commit message&gt;&#34;</span>
 </span></span></code></pre></div><ol>
 <li>Re-include the large file path for LFS handling.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add <span style="color:#e6db74">&#34;&lt;path to large file&gt;&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add <span style="color:#e6db74">&#34;&lt;path to large file&gt;&#34;</span>
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;&lt;insert commit message&gt;&#34;</span>
 </span></span></code></pre></div><ul>
 <li>Another alternative is to use LFS migrate to automate the process.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git lfs migrate import --include<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;*.&lt;file extension type&gt;&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git lfs migrate import --include<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;*.&lt;file extension type&gt;&#34;</span>
 </span></span></code></pre></div><ol>
 <li>Lastly, push the latest commits to your remote origin.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push origin main
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push origin main
 </span></span></code></pre></div><ul>
 <li>Note that you may need to force push the commits and that the history may be rewritten.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push origin main --force
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push origin main --force
 </span></span></code></pre></div>
   </div>
   
