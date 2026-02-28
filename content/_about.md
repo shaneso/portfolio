@@ -4,14 +4,10 @@ draft = false
 title = 'About'
 +++
 
-# Hi, I'm Shane
+# Hi, I'm Shane!
 
-I enjoy building intelligent machines—from processors, circuits, and actuators to the math, algorithms, and software that govern them. I'm currently studying computer science and mathematics at [Simon Fraser University](https://www.sfu.ca/).
-
-Currently, I'm co-leading a new UAV fleet research initiative at the [SFU Autonomous Intelligence and Robotics Lab](https://airob-group.github.io/). I'm also developing trajectory optimization and thrust vector control software at [Simon Fraser University Rocketry](https://www.sfurocketry.com/).
-
-Previously, I worked with a team at [National Research Council Canada](https://nrc.canada.ca/en) to build Canada's first autonomous robotic control system for geochemical sensing and anomaly detection.
-
-Contact: shane_liam_so [at] sfu [dot] ca
-
-[LinkedIn](https://www.linkedin.com/in/shaneso) / [GitHub](https://github.com/shaneso) / [X](https://x.com/shanehso) / [CV](/Shane_So_CV.pdf)
+I'm a third year student at Simon Fraser University studying math and computer science.
+I have strong interests in systems programming, algorithms, formal methods, and ML inference.
+I am excited about working with others to build verified software for large-scale deployment.
+What motivates me is being able to help people live better lives through science and technology.
+Let's connect!
