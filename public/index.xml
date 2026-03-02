@@ -13,7 +13,7 @@
       <link>http://localhost:1313/_contact/</link>
       <pubDate>Fri, 27 Feb 2026 23:04:51 -0800</pubDate>
       <guid>http://localhost:1313/_contact/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.linkedin.com/in/shaneso&#34;&gt;LinkedIn&lt;/a&gt;   &lt;a href=&#34;https://github.com/shaneso&#34;&gt;GitHub&lt;/a&gt;   &lt;a href=&#34;https://leetcode.com/u/shanelhso/&#34;&gt;LeetCode&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;mailto:shane_liam_so@sfu.ca&#34;&gt;Email&lt;/a&gt;   &lt;a href=&#34;https://www.linkedin.com/in/shaneso&#34;&gt;LinkedIn&lt;/a&gt;   &lt;a href=&#34;https://github.com/shaneso&#34;&gt;GitHub&lt;/a&gt;   &lt;a href=&#34;https://leetcode.com/u/shanelhso/&#34;&gt;LeetCode&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/poring.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software Development Life Cycle (SDLC)</title>
@@ -69,7 +69,7 @@
       <link>http://localhost:1313/_about/</link>
       <pubDate>Sat, 03 Jan 2026 22:57:12 -0800</pubDate>
       <guid>http://localhost:1313/_about/</guid>
-      <description>&lt;h1 id=&#34;hi-im-shane&#34;&gt;Hi, I&amp;rsquo;m Shane!&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a third year student at Simon Fraser University studying math and computer science.&#xA;I have strong interests in systems programming, algorithms, formal methods, kernel engineering, and mechanistic interpretability.&#xA;I am excited about working with others to build verified software for large-scale deployment.&#xA;What motivates me is being able to help people live better lives through science and technology.&#xA;Let&amp;rsquo;s connect!&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;mailto:shane_liam_so@sfu.ca&#34;&gt;shane_liam_so@sfu.ca&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/knight.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;hi-im-shane&#34;&gt;Hi, I&amp;rsquo;m Shane!&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a third year student at Simon Fraser University studying math and computer science.&#xA;I have strong interests in systems programming, algorithms, formal methods, kernel engineering, and mechanistic interpretability.&#xA;I am excited about working with others to build fault-tolerant software for large-scale deployment, democratizing technology so that everyone can benefit from it.&#xA;What motivates me is being able to help people live better lives through science and technology!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
