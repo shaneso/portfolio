@@ -6,4 +6,4 @@ title = 'Contact'
 
 [Email](mailto:shane_liam_so@sfu.ca) &emsp; [LinkedIn](https://www.linkedin.com/in/shaneso) &emsp; [GitHub](https://github.com/shaneso) &emsp; [LeetCode](https://leetcode.com/u/shanelhso/)
 
-![](/poring.gif)
+![](/eevee.gif)

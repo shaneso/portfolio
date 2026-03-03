@@ -4,7 +4,7 @@ draft = false
 title = 'About'
 +++
 
-![](/knight.png)
+![](/dragonite.gif)
 
 # Hi, I'm Shane!
 
