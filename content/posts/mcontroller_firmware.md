@@ -20,10 +20,10 @@ Check which port the drone is connected to, e.g. `port=usb1`, since it will be u
 In the STM32CubeProgrammer software (recommended to use the CLI terminal to avoid versioning issues and runtime exceptions). When in the programmer CLI, run the following command script:
 
 ```
-sudo ./STM32_Programmer_CLI -c port=<PORT_ID> -w ~/Research/airob/AIROB_Drone/software/Mcontroller-v7-FanciSwarm/Debug/Mcontroller-v7-firmware.hex 0x08000000 -v -rst
+sudo ./STM32_Programmer_CLI -c port=<PORT_ID> -w ~/<REPO_PARENT_DIRECTORY>/Mcontroller-v7-FanciSwarm/Debug/Mcontroller-v7-firmware.hex 0x08000000 -v -rst
 ```
 
-where the flag `<PORT_ID>` may be modified with your verified port name.
+where the flag `<PORT_ID>` may be modified with your verified port name, and the `<REPO_PARENT_DIRECTORY>` is to be replaced with the directory url in your local machine that contains the `Mcontroller-v7-FanciSwarm` project repository.
 
 Note that, when using the STM32CubeProgrammer interface, the version may need to be changed to an older one for the upload to work. This is because of potential runtime exceptions and environment issues that may occur when flashing the firmware through an unstable build.
 
