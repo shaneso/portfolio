@@ -2,7 +2,7 @@
 title: "National Research Council Canada"
 date: 2026-01-04T00:34:43-08:00
 draft: false
-description: "Lessons I learned during my first engineering internship."
+description: "Lessons I learned during my first software engineering internship."
 ---
 
 One of the first things I learned was that innovation (especially that of the technological and scientific kind) is a fast-paced, high-cost pursuit, and demands a very high degree of technical and mechanical mastery. The space in which innovation is bred is, I argue, one of the best places to grow as a technologist in the new era.
