@@ -4,8 +4,6 @@ draft = false
 title = 'About'
 +++
 
-![](/.png)
-
 # Hi, I'm Shane!
 
 I'm a third year student at Simon Fraser University studying math and computer science.
