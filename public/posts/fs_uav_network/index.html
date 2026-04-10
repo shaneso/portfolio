@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=57227&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=61283&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -361,7 +361,7 @@
 <p>Verify that your machine is connected to the router Wi-fi as well.</p>
 </li>
 <li>
-<p>Build a new Docker container for your ROS-based software repository and run <code>docker run -it --env=&quot;DISPLAY=$DISPLAY&quot; --env=&quot;QT_X11_NO_MITSHM=1&quot; --volume=&quot;/tmp/.X11-unix:/tmp/.X11-unix:rw&quot; --net=host -v $(pwd):/&lt;project_directory&gt; osrf/ros:noetic-desktop-full bash</code> from the current project directory or change <code>$(pwd)</code> to a different path relative to your current directory.</p>
+<p>Build a new Docker container for your ROS-based software repository and run <code>docker run -it --env=&quot;DISPLAY=\$DISPLAY&quot; --env=&quot;QT_X11_NO_MITSHM=1&quot; --volume=&quot;/tmp/.X11-unix:/tmp/.X11-unix:rw&quot; --net=host -v $(pwd):/&lt;project_directory&gt; osrf/ros:noetic-desktop-full bash</code> from the current project directory or change <code>$(pwd)</code> to a different path relative to your current directory.</p>
 </li>
 </ol>
 <ul>

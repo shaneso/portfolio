@@ -36,7 +36,7 @@ description: "Tutorial on setting up ESP8266 networking modules for FanciSwarm U
 
 8. Verify that your machine is connected to the router Wi-fi as well.
 
-9. Build a new Docker container for your ROS-based software repository and run `docker run -it --env="DISPLAY=$DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --net=host -v $(pwd):/<project_directory> osrf/ros:noetic-desktop-full bash` from the current project directory or change `$(pwd)` to a different path relative to your current directory.
+9. Build a new Docker container for your ROS-based software repository and run `docker run -it --env="DISPLAY=\$DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --net=host -v $(pwd):/<project_directory> osrf/ros:noetic-desktop-full bash` from the current project directory or change `$(pwd)` to a different path relative to your current directory.
 
 - If you already have a Docker container build with all required dependencies to run the source code in a ROS environment, you may use `docker start <container_name>` or `docker start <container ID>` to avoid building multiple copies.
 
