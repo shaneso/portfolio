@@ -19,7 +19,7 @@ Check which port the drone is connected to, e.g. `port=usb1`, since it will be u
 
 In the STM32CubeProgrammer software (recommended to use the CLI terminal to avoid versioning issues and runtime exceptions). When in the programmer CLI, run the following command script:
 
-```
+```bash
 sudo ./STM32_Programmer_CLI -c port=<PORT_ID> -w ~/<REPO_PARENT_DIRECTORY>/Mcontroller-v7-FanciSwarm/Debug/Mcontroller-v7-firmware.hex 0x08000000 -v -rst
 ```
 
@@ -31,20 +31,14 @@ Note that, when using the STM32CubeProgrammer interface, the version may need to
 
 In a preferred IDE or text editor, find the `config.h` file in the `Clibrary/include/` directory. Modify the following preprocessor directives to change the settings:
 
-```
+```cpp
 #define USE_MAG 1
-```
-
-```
 #define USE_ODOMETRY 1
-```
-
-```
 #define USE_MOTION 1
 ```
 
 Once the directives are set, test it with the firmware by compiling it, then uploading it to the FanciSwarm drone processor. If odometry and motion capture work, change the SLAM Z directive setting:
 
-```
+```cpp
 #define USE_ODOM_Z 1
 ```
