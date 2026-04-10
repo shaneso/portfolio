@@ -17,7 +17,7 @@ When running the process `roslaunch fcu_core fcu_core.launch` you may encounter 
 
 Verify that your ROS nodes can be accessed and that ROS master is connected. You can test this by running `rosnode list`. If it returns `ERROR: Unable to communicate with master!`, run the following commands.
 
-```
+```bash
 unset ROS_HOSTNAME
 unset ROS_IP
 export ROS_MASTER_URI=http://localhost:11311
@@ -25,7 +25,7 @@ export ROS_MASTER_URI=http://localhost:11311
 
 These commands configure your ROS session to run in an isolated local machine environment, so that any conflicts or incompatible environment variables do not persist. Next, we configure the subsystem and kernel processes such that Mesa is not expecting a different rendering manager or encounters userspace access restrictions. We achieve this with the following:
 
-```
+```bash
 export LIBGL_ALWAYS_SOFTWARE=1
 export MESA_LOADER_DRIVER_OVERRIDE=llvmpipe
 export GALLIUM_DRIVER=llvmpipe
