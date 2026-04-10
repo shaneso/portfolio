@@ -314,10 +314,10 @@
 <code>docker pull osrf/ros:noetic-desktop-full</code>
 This command installs the ROS environment you need to run your packages with the installed containers that contain all dependencies.
 You need to <em>mount</em> the file directory of your project onto the virtual environment build from Docker. The command may look something like:</p>
-<pre tabindex="0"><code>docker run -it -v --name &lt;container_name&gt; --network host $(pwd):/&lt;project_directory_name&gt; osrf/ros:noetic-desktop-full bash
-</code></pre><p>or the command may first start off as:</p>
-<pre tabindex="0"><code>docker run -it -v $(pwd):/&lt;project_directory_name&gt; osrf/ros:noetic-desktop-full bash
-</code></pre><p>Next, download all the dependencies. For example, execute the commands:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -it -v --name &lt;container_name&gt; --network host <span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span>:/&lt;project_directory_name&gt; osrf/ros:noetic-desktop-full bash
+</span></span></code></pre></div><p>or the command may first start off as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -it -v <span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span>:/&lt;project_directory_name&gt; osrf/ros:noetic-desktop-full bash
+</span></span></code></pre></div><p>Next, download all the dependencies. For example, execute the commands:
 <code>apt install ros-noetic-serial</code> and <code>apt install libeigen3-dev</code>
 If it doesn&rsquo;t work, try updating the library/package manager using <code>apt update</code> then try installing the dependencies again.
 Run <code>apt install git</code> to install <em>git</em> into your environment.
@@ -327,8 +327,8 @@ Finally, launch your project software in the compiled ROS environment using the 
 <p><strong>IF launch process cannot run the interface DO</strong>
 Setup Xserver in your Docker container with <code>xhost +local:docker</code>
 After, run the ROS environment in your Docker container using:</p>
-<pre tabindex="0"><code>docker run -it --name &lt;project_container_name&gt; --env=&#34;DISPLAY=$DISPLAY&#34; --env=&#34;QT_X11_NO_MITSHM=1&#34; --volume=&#34;/tmp/.X11-unix:/tmp/.X11-unix:rw&#34; --net=host -v $(pwd):/&lt;project_directory&gt; osrf/ros:noetic-desktop-full bash
-</code></pre><p>Note that the <code>--net=host</code> is an optional flag, but is important when working with local network configs later on.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -it --name &lt;project_container_name&gt; --env<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;DISPLAY=</span>$DISPLAY<span style="color:#e6db74">&#34;</span> --env<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;QT_X11_NO_MITSHM=1&#34;</span> --volume<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/tmp/.X11-unix:/tmp/.X11-unix:rw&#34;</span> --net<span style="color:#f92672">=</span>host -v <span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span>:/&lt;project_directory&gt; osrf/ros:noetic-desktop-full bash
+</span></span></code></pre></div><p>Note that the <code>--net=host</code> is an optional flag, but is important when working with local network configs later on.
 Run <code>apt update</code> then run <code>apt install tmux</code> to install the terminal multiplexer for the next steps.
 Use the terminal multiplexer to setup dual shells with <code>tmux</code>
 On the first terminal, execute <code>roscore</code>

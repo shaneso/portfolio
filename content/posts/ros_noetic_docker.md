@@ -12,13 +12,13 @@ Instead of installing all dependencies, can use Docker premade images from the D
 This command installs the ROS environment you need to run your packages with the installed containers that contain all dependencies.
 You need to *mount* the file directory of your project onto the virtual environment build from Docker. The command may look something like:
 
-```
+```bash
 docker run -it -v --name <container_name> --network host $(pwd):/<project_directory_name> osrf/ros:noetic-desktop-full bash
 ```
 
 or the command may first start off as:
 
-```
+```bash
 docker run -it -v $(pwd):/<project_directory_name> osrf/ros:noetic-desktop-full bash
 ```
 
@@ -34,7 +34,7 @@ Finally, launch your project software in the compiled ROS environment using the 
 Setup Xserver in your Docker container with `xhost +local:docker`
 After, run the ROS environment in your Docker container using:
 
-```
+```bash
 docker run -it --name <project_container_name> --env="DISPLAY=$DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --net=host -v $(pwd):/<project_directory> osrf/ros:noetic-desktop-full bash
 ```
 
